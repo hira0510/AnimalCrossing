@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="AnimalCollectionViewCell" reuseIdentifier="AnimalCollectionViewCell" id="gvN-rz-fGQ" customClass="AnimalCollectionViewCell" customModule="AnimalCrossing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HgE-sa-ywu">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBG" translatesAutoresizingMaskIntoConstraints="NO" id="kGp-1Q-KVv">
+                                <rect key="frame" x="4" y="4" width="82.5" height="105"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ceO-QE-6hi">
+                                <rect key="frame" x="0.0" y="112" width="90" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuh-Z6-izj">
+                                        <rect key="frame" x="41" y="0.0" width="8" height="13"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                        <color key="textColor" white="0.40103274828767121" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="RDX-ID-W4e">
+                                        <rect key="frame" x="40.5" y="15" width="9.5" height="13"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSg-Qs-mDA">
+                                <rect key="frame" x="61.5" y="4" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lSg-Qs-mDA" secondAttribute="height" multiplier="1:1" id="ihD-UV-Cad"/>
+                                </constraints>
+                                <state key="normal" image="Favorites"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCV-ml-hei">
+                                <rect key="frame" x="4" y="4" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kCV-ml-hei" secondAttribute="height" multiplier="1:1" id="pZu-7P-Cr1"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="owl_icon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.89942744006849318" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kGp-1Q-KVv" firstAttribute="centerY" secondItem="HgE-sa-ywu" secondAttribute="centerY" multiplier="105:140" id="7AW-kb-k0R"/>
+                            <constraint firstAttribute="bottom" secondItem="ceO-QE-6hi" secondAttribute="bottom" constant="10" id="AqT-yr-LvJ"/>
+                            <constraint firstItem="lSg-Qs-mDA" firstAttribute="trailing" secondItem="kGp-1Q-KVv" secondAttribute="trailing" id="DeM-Vk-FWw"/>
+                            <constraint firstItem="kGp-1Q-KVv" firstAttribute="width" secondItem="HgE-sa-ywu" secondAttribute="width" multiplier="110:120" id="EgO-r8-mtV"/>
+                            <constraint firstItem="ceO-QE-6hi" firstAttribute="width" secondItem="HgE-sa-ywu" secondAttribute="width" id="Fjq-TT-bji"/>
+                            <constraint firstItem="lSg-Qs-mDA" firstAttribute="width" secondItem="HgE-sa-ywu" secondAttribute="width" multiplier="25:90" id="Oup-Xk-TiU"/>
+                            <constraint firstItem="kGp-1Q-KVv" firstAttribute="leading" secondItem="kCV-ml-hei" secondAttribute="leading" id="Pbb-9q-G5W"/>
+                            <constraint firstItem="ceO-QE-6hi" firstAttribute="top" secondItem="kGp-1Q-KVv" secondAttribute="bottom" constant="3" id="R9Z-1o-6HV"/>
+                            <constraint firstItem="kGp-1Q-KVv" firstAttribute="centerX" secondItem="HgE-sa-ywu" secondAttribute="centerX" id="SLf-LW-rLN"/>
+                            <constraint firstItem="kCV-ml-hei" firstAttribute="width" secondItem="HgE-sa-ywu" secondAttribute="width" multiplier="25:90" id="lzR-ux-99n"/>
+                            <constraint firstItem="kGp-1Q-KVv" firstAttribute="height" secondItem="HgE-sa-ywu" secondAttribute="height" multiplier="140:200" id="lzw-MD-qbS"/>
+                            <constraint firstItem="kGp-1Q-KVv" firstAttribute="top" secondItem="kCV-ml-hei" secondAttribute="top" id="olu-uJ-rVE"/>
+                            <constraint firstItem="ceO-QE-6hi" firstAttribute="centerX" secondItem="HgE-sa-ywu" secondAttribute="centerX" id="s2s-8b-DC1"/>
+                            <constraint firstItem="lSg-Qs-mDA" firstAttribute="top" secondItem="kGp-1Q-KVv" secondAttribute="top" id="sMu-eR-iua"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="HgE-sa-ywu" firstAttribute="height" secondItem="gvN-rz-fGQ" secondAttribute="height" id="DkV-xS-rPA"/>
+                <constraint firstItem="HgE-sa-ywu" firstAttribute="centerX" secondItem="Ig3-pU-1b2" secondAttribute="centerX" id="VZN-Uy-5QC"/>
+                <constraint firstItem="HgE-sa-ywu" firstAttribute="width" secondItem="gvN-rz-fGQ" secondAttribute="width" id="gv0-gk-l0c"/>
+                <constraint firstItem="HgE-sa-ywu" firstAttribute="centerY" secondItem="gvN-rz-fGQ" secondAttribute="centerY" id="kmn-tM-kyD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Ig3-pU-1b2"/>
+            <size key="customSize" width="78" height="153"/>
+            <connections>
+                <outlet property="favoriteButton" destination="lSg-Qs-mDA" id="szd-O4-MdF"/>
+                <outlet property="mImageView" destination="kGp-1Q-KVv" id="SD5-zo-OaL"/>
+                <outlet property="moneyLabel" destination="wuh-Z6-izj" id="25o-Ok-6Fl"/>
+                <outlet property="museumButton" destination="kCV-ml-hei" id="zwV-nd-03e"/>
+                <outlet property="nameLabel" destination="RDX-ID-W4e" id="FTi-FA-zXg"/>
+                <outlet property="view" destination="HgE-sa-ywu" id="Ygy-oq-dby"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="87.723214285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Favorites" width="50" height="50"/>
+        <image name="imageBG" width="195" height="260"/>
+        <image name="owl_icon" width="100" height="100"/>
+    </resources>
+</document>

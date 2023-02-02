@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC70F7EAEE8660B33A661D0F /* Pods_AnimalCrossing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483E742FF92C6091A9338927 /* Pods_AnimalCrossing.framework */; };
+		FE3BDAFF246BAF2000DD42F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDAFE246BAF2000DD42F8 /* AppDelegate.swift */; };
+		FE3BDB01246BAF2000DD42F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB00246BAF2000DD42F8 /* SceneDelegate.swift */; };
+		FE3BDB03246BAF2000DD42F8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB02246BAF2000DD42F8 /* MenuViewController.swift */; };
+		FE3BDB06246BAF2000DD42F8 /* AnimalMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3BDB04246BAF2000DD42F8 /* AnimalMain.storyboard */; };
+		FE3BDB08246BAF2100DD42F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE3BDB07246BAF2100DD42F8 /* Assets.xcassets */; };
+		FE3BDB0B246BAF2100DD42F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3BDB09246BAF2100DD42F8 /* LaunchScreen.storyboard */; };
+		FE3BDB27246BB27700DD42F8 /* BugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB26246BB27700DD42F8 /* BugViewController.swift */; };
+		FE3BDB29246BB2A100DD42F8 /* FishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB28246BB2A100DD42F8 /* FishViewController.swift */; };
+		FE3BDB2C246BB2CF00DD42F8 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB2B246BB2CF00DD42F8 /* FavoriteViewController.swift */; };
+		FE3BDB30246BC5F300DD42F8 /* AnimalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB2F246BC5F300DD42F8 /* AnimalService.swift */; };
+		FE3BDB33246BC60300DD42F8 /* AnimalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB32246BC60300DD42F8 /* AnimalAPI.swift */; };
+		FE3BDB38246BC64100DD42F8 /* ObservableType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB35246BC64100DD42F8 /* ObservableType+ObjectMapper.swift */; };
+		FE3BDB39246BC64100DD42F8 /* Single+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB36246BC64100DD42F8 /* Single+ObjectMapper.swift */; };
+		FE3BDB3A246BC64100DD42F8 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB37246BC64100DD42F8 /* Response+ObjectMapper.swift */; };
+		FE3BDB3D246BC84500DD42F8 /* BugsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB3C246BC84500DD42F8 /* BugsModel.swift */; };
+		FE3BDB42246BCBC400DD42F8 /* AnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB41246BCBC400DD42F8 /* AnimalViewModel.swift */; };
+		FE3BDB46246BDDB900DD42F8 /* BugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB45246BDDB900DD42F8 /* BugView.swift */; };
+		FE3BDB48246BDDC300DD42F8 /* FishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB47246BDDC300DD42F8 /* FishView.swift */; };
+		FE3BDB4B246BE11400DD42F8 /* AnimalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB49246BE11400DD42F8 /* AnimalCollectionViewCell.swift */; };
+		FE3BDB4C246BE11400DD42F8 /* AnimalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE3BDB4A246BE11400DD42F8 /* AnimalCollectionViewCell.xib */; };
+		FE3BDB52246BF14E00DD42F8 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB51246BF14E00DD42F8 /* ResultView.swift */; };
+		FE3BDB54246BF16800DD42F8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BDB53246BF16800DD42F8 /* ResultViewController.swift */; };
+		FE618884246CE13400BF7B5C /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE618883246CE13400BF7B5C /* ResultViewModel.swift */; };
+		FE62404724723830000D45B3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE62404624723830000D45B3 /* LoadingView.swift */; };
+		FE62404924723839000D45B3 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62404824723839000D45B3 /* LoadingView.xib */; };
+		FE62404B24727B79000D45B3 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE62404A24727B79000D45B3 /* MenuView.swift */; };
+		FE62404E24727D65000D45B3 /* MenuCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE62404C24727D65000D45B3 /* MenuCollectionReusableView.swift */; };
+		FE62404F24727D65000D45B3 /* MenuCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE62404D24727D65000D45B3 /* MenuCollectionReusableView.xib */; };
+		FE62405124728774000D45B3 /* AnimalLandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE62405024728774000D45B3 /* AnimalLandingViewController.swift */; };
+		FEA031F6247B64A900BFF53A /* DejimaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA031F5247B64A900BFF53A /* DejimaViewController.swift */; };
+		FEA031F9247B66AA00BFF53A /* DejimaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA031F7247B66AA00BFF53A /* DejimaCollectionViewCell.swift */; };
+		FEA031FA247B66AA00BFF53A /* DejimaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA031F8247B66AA00BFF53A /* DejimaCollectionViewCell.xib */; };
+		FEA031FC247B67DE00BFF53A /* DejimaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA031FB247B67DE00BFF53A /* DejimaViewModel.swift */; };
+		FEB7EB62247617B400D53B87 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB7EB61247617B400D53B87 /* FavoriteView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2598EE790953673C4D9A5ABC /* Pods-AnimalCrossing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalCrossing.release.xcconfig"; path = "Target Support Files/Pods-AnimalCrossing/Pods-AnimalCrossing.release.xcconfig"; sourceTree = "<group>"; };
+		483E742FF92C6091A9338927 /* Pods_AnimalCrossing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalCrossing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD9CC2715A63DE105CA2D3B /* Pods-AnimalCrossing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalCrossing.debug.xcconfig"; path = "Target Support Files/Pods-AnimalCrossing/Pods-AnimalCrossing.debug.xcconfig"; sourceTree = "<group>"; };
+		FE3BDAFB246BAF2000DD42F8 /* AnimalCrossing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalCrossing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3BDAFE246BAF2000DD42F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE3BDB00246BAF2000DD42F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE3BDB02246BAF2000DD42F8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FE3BDB05246BAF2000DD42F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AnimalMain.storyboard; sourceTree = "<group>"; };
+		FE3BDB07246BAF2100DD42F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE3BDB0A246BAF2100DD42F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE3BDB0C246BAF2100DD42F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3BDB26246BB27700DD42F8 /* BugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugViewController.swift; sourceTree = "<group>"; };
+		FE3BDB28246BB2A100DD42F8 /* FishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishViewController.swift; sourceTree = "<group>"; };
+		FE3BDB2B246BB2CF00DD42F8 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		FE3BDB2F246BC5F300DD42F8 /* AnimalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalService.swift; sourceTree = "<group>"; };
+		FE3BDB32246BC60300DD42F8 /* AnimalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalAPI.swift; sourceTree = "<group>"; };
+		FE3BDB35246BC64100DD42F8 /* ObservableType+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+ObjectMapper.swift"; sourceTree = "<group>"; };
+		FE3BDB36246BC64100DD42F8 /* Single+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+ObjectMapper.swift"; sourceTree = "<group>"; };
+		FE3BDB37246BC64100DD42F8 /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
+		FE3BDB3C246BC84500DD42F8 /* BugsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsModel.swift; sourceTree = "<group>"; };
+		FE3BDB41246BCBC400DD42F8 /* AnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewModel.swift; sourceTree = "<group>"; };
+		FE3BDB45246BDDB900DD42F8 /* BugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugView.swift; sourceTree = "<group>"; };
+		FE3BDB47246BDDC300DD42F8 /* FishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishView.swift; sourceTree = "<group>"; };
+		FE3BDB49246BE11400DD42F8 /* AnimalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE3BDB4A246BE11400DD42F8 /* AnimalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalCollectionViewCell.xib; sourceTree = "<group>"; };
+		FE3BDB51246BF14E00DD42F8 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		FE3BDB53246BF16800DD42F8 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		FE618883246CE13400BF7B5C /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		FE62404624723830000D45B3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		FE62404824723839000D45B3 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		FE62404A24727B79000D45B3 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FE62404C24727D65000D45B3 /* MenuCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionReusableView.swift; sourceTree = "<group>"; };
+		FE62404D24727D65000D45B3 /* MenuCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionReusableView.xib; sourceTree = "<group>"; };
+		FE62405024728774000D45B3 /* AnimalLandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLandingViewController.swift; sourceTree = "<group>"; };
+		FEA031F5247B64A900BFF53A /* DejimaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejimaViewController.swift; sourceTree = "<group>"; };
+		FEA031F7247B66AA00BFF53A /* DejimaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejimaCollectionViewCell.swift; sourceTree = "<group>"; };
+		FEA031F8247B66AA00BFF53A /* DejimaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DejimaCollectionViewCell.xib; sourceTree = "<group>"; };
+		FEA031FB247B67DE00BFF53A /* DejimaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DejimaViewModel.swift; sourceTree = "<group>"; };
+		FEB7EB61247617B400D53B87 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE3BDAF8246BAF2000DD42F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC70F7EAEE8660B33A661D0F /* Pods_AnimalCrossing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13FED5FEF2E9D48285914306 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				483E742FF92C6091A9338927 /* Pods_AnimalCrossing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A7727932CA010872E53EDEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BD9CC2715A63DE105CA2D3B /* Pods-AnimalCrossing.debug.xcconfig */,
+				2598EE790953673C4D9A5ABC /* Pods-AnimalCrossing.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE3BDAF2246BAF2000DD42F8 = {
+			isa = PBXGroup;
+			children = (
+				FE3BDAFD246BAF2000DD42F8 /* AnimalCrossing */,
+				FE3BDAFC246BAF2000DD42F8 /* Products */,
+				7A7727932CA010872E53EDEC /* Pods */,
+				13FED5FEF2E9D48285914306 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE3BDAFC246BAF2000DD42F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BDAFB246BAF2000DD42F8 /* AnimalCrossing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE3BDAFD246BAF2000DD42F8 /* AnimalCrossing */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BDB2D246BC5D400DD42F8 /* Http */,
+				FE3BDB12246BB03800DD42F8 /* FishAndBugs */,
+				FE3BDB34246BC64100DD42F8 /* Moya_ObjectMapper */,
+				FE3BDAFE246BAF2000DD42F8 /* AppDelegate.swift */,
+				FE3BDB00246BAF2000DD42F8 /* SceneDelegate.swift */,
+				FE3BDB07246BAF2100DD42F8 /* Assets.xcassets */,
+				FE3BDB09246BAF2100DD42F8 /* LaunchScreen.storyboard */,
+				FE3BDB0C246BAF2100DD42F8 /* Info.plist */,
+			);
+			path = AnimalCrossing;
+			sourceTree = "<group>";
+		};
+		FE3BDB12246BB03800DD42F8 /* FishAndBugs */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BDB16246BB06000DD42F8 /* ViewModel */,
+				FE3BDB15246BB05B00DD42F8 /* Model */,
+				FE3BDB14246BB05600DD42F8 /* View */,
+				FE3BDB13246BB05000DD42F8 /* Controller */,
+			);
+			path = FishAndBugs;
+			sourceTree = "<group>";
+		};
+		FE3BDB13246BB05000DD42F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE62405024728774000D45B3 /* AnimalLandingViewController.swift */,
+				FE3BDB02246BAF2000DD42F8 /* MenuViewController.swift */,
+				FE3BDB28246BB2A100DD42F8 /* FishViewController.swift */,
+				FE3BDB26246BB27700DD42F8 /* BugViewController.swift */,
+				FE3BDB2B246BB2CF00DD42F8 /* FavoriteViewController.swift */,
+				FE3BDB53246BF16800DD42F8 /* ResultViewController.swift */,
+				FEA031F5247B64A900BFF53A /* DejimaViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE3BDB14246BB05600DD42F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BDB04246BAF2000DD42F8 /* AnimalMain.storyboard */,
+				FE62404A24727B79000D45B3 /* MenuView.swift */,
+				FE3BDB47246BDDC300DD42F8 /* FishView.swift */,
+				FE3BDB45246BDDB900DD42F8 /* BugView.swift */,
+				FE3BDB51246BF14E00DD42F8 /* ResultView.swift */,
+				FEB7EB61247617B400D53B87 /* FavoriteView.swift */,
+				FE3BDB49246BE11400DD42F8 /* AnimalCollectionViewCell.swift */,
+				FE3BDB4A246BE11400DD42F8 /* AnimalCollectionViewCell.xib */,
+				FE62404624723830000D45B3 /* LoadingView.swift */,
+				FE62404824723839000D45B3 /* LoadingView.xib */,
+				FE62404C24727D65000D45B3 /* MenuCollectionReusableView.swift */,
+				FE62404D24727D65000D45B3 /* MenuCollectionReusableView.xib */,
+				FEA031F7247B66AA00BFF53A /* DejimaCollectionViewCell.swift */,
+				FEA031F8247B66AA00BFF53A /* DejimaCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE3BDB15246BB05B00DD42F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BDB3C246BC84500DD42F8 /* BugsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE3BDB16246BB06000DD42F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BDB41246BCBC400DD42F8 /* AnimalViewModel.swift */,
+				FE618883246CE13400BF7B5C /* ResultViewModel.swift */,
+				FEA031FB247B67DE00BFF53A /* DejimaViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FE3BDB2D246BC5D400DD42F8 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BDB2F246BC5F300DD42F8 /* AnimalService.swift */,
+				FE3BDB32246BC60300DD42F8 /* AnimalAPI.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		FE3BDB34246BC64100DD42F8 /* Moya_ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BDB35246BC64100DD42F8 /* ObservableType+ObjectMapper.swift */,
+				FE3BDB36246BC64100DD42F8 /* Single+ObjectMapper.swift */,
+				FE3BDB37246BC64100DD42F8 /* Response+ObjectMapper.swift */,
+			);
+			path = Moya_ObjectMapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE3BDAFA246BAF2000DD42F8 /* AnimalCrossing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE3BDB0F246BAF2100DD42F8 /* Build configuration list for PBXNativeTarget "AnimalCrossing" */;
+			buildPhases = (
+				71F9A685A910A4166AAEB793 /* [CP] Check Pods Manifest.lock */,
+				FE3BDAF7246BAF2000DD42F8 /* Sources */,
+				FE3BDAF8246BAF2000DD42F8 /* Frameworks */,
+				FE3BDAF9246BAF2000DD42F8 /* Resources */,
+				32F292F5850ED5D45FEB195C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimalCrossing;
+			productName = AnimalCrossing;
+			productReference = FE3BDAFB246BAF2000DD42F8 /* AnimalCrossing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE3BDAF3246BAF2000DD42F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = 1;
+				TargetAttributes = {
+					FE3BDAFA246BAF2000DD42F8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FE3BDAF6246BAF2000DD42F8 /* Build configuration list for PBXProject "AnimalCrossing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE3BDAF2246BAF2000DD42F8;
+			productRefGroup = FE3BDAFC246BAF2000DD42F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE3BDAFA246BAF2000DD42F8 /* AnimalCrossing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE3BDAF9246BAF2000DD42F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE62404F24727D65000D45B3 /* MenuCollectionReusableView.xib in Resources */,
+				FEA031FA247B66AA00BFF53A /* DejimaCollectionViewCell.xib in Resources */,
+				FE3BDB0B246BAF2100DD42F8 /* LaunchScreen.storyboard in Resources */,
+				FE3BDB08246BAF2100DD42F8 /* Assets.xcassets in Resources */,
+				FE3BDB4C246BE11400DD42F8 /* AnimalCollectionViewCell.xib in Resources */,
+				FE3BDB06246BAF2000DD42F8 /* AnimalMain.storyboard in Resources */,
+				FE62404924723839000D45B3 /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32F292F5850ED5D45FEB195C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimalCrossing/Pods-AnimalCrossing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimalCrossing/Pods-AnimalCrossing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimalCrossing/Pods-AnimalCrossing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71F9A685A910A4166AAEB793 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimalCrossing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE3BDAF7246BAF2000DD42F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3BDB46246BDDB900DD42F8 /* BugView.swift in Sources */,
+				FE3BDB03246BAF2000DD42F8 /* MenuViewController.swift in Sources */,
+				FE3BDB52246BF14E00DD42F8 /* ResultView.swift in Sources */,
+				FE3BDB42246BCBC400DD42F8 /* AnimalViewModel.swift in Sources */,
+				FE3BDB39246BC64100DD42F8 /* Single+ObjectMapper.swift in Sources */,
+				FE3BDB48246BDDC300DD42F8 /* FishView.swift in Sources */,
+				FE3BDB38246BC64100DD42F8 /* ObservableType+ObjectMapper.swift in Sources */,
+				FE62404B24727B79000D45B3 /* MenuView.swift in Sources */,
+				FE62404E24727D65000D45B3 /* MenuCollectionReusableView.swift in Sources */,
+				FE3BDAFF246BAF2000DD42F8 /* AppDelegate.swift in Sources */,
+				FE3BDB4B246BE11400DD42F8 /* AnimalCollectionViewCell.swift in Sources */,
+				FE62405124728774000D45B3 /* AnimalLandingViewController.swift in Sources */,
+				FEA031F6247B64A900BFF53A /* DejimaViewController.swift in Sources */,
+				FEA031FC247B67DE00BFF53A /* DejimaViewModel.swift in Sources */,
+				FE3BDB3D246BC84500DD42F8 /* BugsModel.swift in Sources */,
+				FEA031F9247B66AA00BFF53A /* DejimaCollectionViewCell.swift in Sources */,
+				FE3BDB01246BAF2000DD42F8 /* SceneDelegate.swift in Sources */,
+				FE618884246CE13400BF7B5C /* ResultViewModel.swift in Sources */,
+				FE3BDB30246BC5F300DD42F8 /* AnimalService.swift in Sources */,
+				FEB7EB62247617B400D53B87 /* FavoriteView.swift in Sources */,
+				FE62404724723830000D45B3 /* LoadingView.swift in Sources */,
+				FE3BDB3A246BC64100DD42F8 /* Response+ObjectMapper.swift in Sources */,
+				FE3BDB29246BB2A100DD42F8 /* FishViewController.swift in Sources */,
+				FE3BDB54246BF16800DD42F8 /* ResultViewController.swift in Sources */,
+				FE3BDB2C246BB2CF00DD42F8 /* FavoriteViewController.swift in Sources */,
+				FE3BDB33246BC60300DD42F8 /* AnimalAPI.swift in Sources */,
+				FE3BDB27246BB27700DD42F8 /* BugViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE3BDB04246BAF2000DD42F8 /* AnimalMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE3BDB05246BAF2000DD42F8 /* Base */,
+			);
+			name = AnimalMain.storyboard;
+			sourceTree = "<group>";
+		};
+		FE3BDB09246BAF2100DD42F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE3BDB0A246BAF2100DD42F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE3BDB0D246BAF2100DD42F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE3BDB0E246BAF2100DD42F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE3BDB10246BAF2100DD42F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD9CC2715A63DE105CA2D3B /* Pods-AnimalCrossing.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0525;
+				DEVELOPMENT_TEAM = J86D5LTY88;
+				INFOPLIST_FILE = AnimalCrossing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.01;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crzs.animalcrossingzeroa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FE3BDB11246BAF2100DD42F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2598EE790953673C4D9A5ABC /* Pods-AnimalCrossing.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0525;
+				DEVELOPMENT_TEAM = J86D5LTY88;
+				INFOPLIST_FILE = AnimalCrossing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.01;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crzs.animalcrossingzeroa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE3BDAF6246BAF2000DD42F8 /* Build configuration list for PBXProject "AnimalCrossing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3BDB0D246BAF2100DD42F8 /* Debug */,
+				FE3BDB0E246BAF2100DD42F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE3BDB0F246BAF2100DD42F8 /* Build configuration list for PBXNativeTarget "AnimalCrossing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3BDB10246BAF2100DD42F8 /* Debug */,
+				FE3BDB11246BAF2100DD42F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE3BDAF3246BAF2000DD42F8 /* Project object */;
+}
